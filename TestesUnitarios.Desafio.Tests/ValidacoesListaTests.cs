@@ -73,27 +73,27 @@ public class ValidacoesListaTests
 
         // Arrange
         var lista = new List<int> { 5, -1, -8, 9 };
-        int maiorValor = lista.Max();
+        int maiorNumero = lista.Max();
         // Act
         var resultado = _validacoes.RetornarMaiorNumeroLista(lista);
         // Assert
         //
-        Assert.Equal(maiorValor, resultado);
+        Assert.Equal(maiorNumero, resultado);
     }
 
     [Fact]
     public void DeveRetornarOitoNegativoComoMenorNumeroDaLista()
     {
-        //TODO: Implementar método de teste
+        //
 
         // Arrange
         var lista = new List<int> { 5, -1, -8, 9 };
-
+        int menorValor = lista.Min();
         // Act
         var resultado = _validacoes.RetornarMenorNumeroLista(lista);
 
         // Assert
-        //TODO: Corrigir o Assert.Equal com base no retorno da chamada ao método
-        Assert.Equal(-8, -8);
+        //
+        Assert.Equal(menorValorNegativo, -8);
     }
 }
