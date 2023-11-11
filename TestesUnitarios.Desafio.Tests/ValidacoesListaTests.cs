@@ -88,12 +88,12 @@ public class ValidacoesListaTests
 
         // Arrange
         var lista = new List<int> { 5, -1, -8, 9 };
-        int menorValor = lista.Min();
+        int menorNumero = lista.Min();
         // Act
         var resultado = _validacoes.RetornarMenorNumeroLista(lista);
 
         // Assert
         //
-        Assert.Equal(menorValorNegativo, -8);
+        Assert.Equal(menorNumero, resultado);
     }
 }
