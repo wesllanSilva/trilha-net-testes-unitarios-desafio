@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using TestesUnitarios.Desafio.Console.Services;
 
 namespace TestesUnitarios.Desafio.Tests;
@@ -53,7 +54,7 @@ public class ValidacoesListaTests
     [Fact]
     public void DeveMultiplicarOsElementosDaListaPor2()
     {
-        //TODO: Implementar método de teste
+        //
 
         // Arrange
         var lista = new List<int> { 5, 7, 8, 9 };
@@ -68,16 +69,16 @@ public class ValidacoesListaTests
     [Fact]
     public void DeveRetornar9ComoMaiorNumeroDaLista()
     {
-        //TODO: Implementar método de teste
+        //
 
         // Arrange
         var lista = new List<int> { 5, -1, -8, 9 };
-
+        int maiorValor = lista.Max();
         // Act
-
+        var resultado = _validacoes.RetornarMaiorNumeroLista(lista);
         // Assert
-        //TODO: Corrigir o Assert.Equal com base no retorno da chamada ao método
-        Assert.Equal(9, 9);
+        //
+        Assert.Equal(maiorValor, resultado);
     }
 
     [Fact]
